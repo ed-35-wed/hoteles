@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel de Lujo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#promociones">Promociones</a></li>
+            <li><a href="#reservaciones">Reservaciones</a></li>
+            <li><a href="#plan-ejecutivo">Plan Ejecutivo</a></li>
+            <li><a href="#centro-convenciones">Centro de Convenciones</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <section id="home">
+        <h1>Bienvenidos al Hotel de Lujo</h1>
+        <p>Tu lugar ideal para descansar y disfrutar de nuestras promociones exclusivas.</p>
+    </section>
+
+    <!-- Sección de Promociones -->
+    <section id="promociones">
+        <h2>Promociones</h2>
+        <div class="promocion">
+            <h3>Oferta Especial de Fin de Semana</h3>
+            <p>Aprovecha un 20% de descuento en tu reservación de fin de semana.</p>
+        </div>
+        <div class="promocion">
+            <h3>Reserva Anticipada</h3>
+            <p>Realiza tu reserva con 30 días de anticipación y obtén un descuento exclusivo.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Reservaciones -->
+    <section id="reservaciones">
+        <h2>Reserva tu Habitación</h2>
+        <form id="reservation-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="fecha">Fecha de llegada:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="num-personas">Número de personas:</label>
+            <input type="number" id="num-personas" name="num-personas" min="1" required>
+
+            <button type="submit">Hacer Reserva</button>
+        </form>
+    </section>
+
+    <!-- Sección Plan Ejecutivo -->
+    <section id="plan-ejecutivo">
+        <h2>Plan Ejecutivo</h2>
+        <p>Disfruta de nuestro plan ejecutivo, con servicios exclusivos para empresarios y viajeros frecuentes.</p>
+        <ul>
+            <li>Acceso a salas de reuniones</li>
+            <li>Desayuno ejecutivo incluido</li>
+            <li>Transporte al aeropuerto</li>
+        </ul>
+    </section>
+
+    <!-- Sección Centro de Convenciones -->
+    <section id="centro-convenciones">
+        <h2>Centro de Convenciones</h2>
+        <p>Contamos con amplias salas de convenciones para tus eventos corporativos y sociales.</p>
+        <button onclick="mostrarInformacion()">Más Información</button>
+        <p id="informacion-extra" style="display:none;">Capacidad para más de 500 personas. Equipos audiovisuales disponibles.</p>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
